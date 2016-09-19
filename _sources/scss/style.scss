@@ -1,0 +1,109 @@
+@import
+  'sass/_susy.scss',
+  'sections/reset.scss',
+  'sections/mail',
+  'sections/fonts';
+
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  math: fluid,
+  gutter-position: outside,
+);
+
+$container: 1170px;
+$container-float: 100%;
+
+$dark-text: #353535;
+$light-text: #fff;
+
+$light-gray-bg: #f3f4f4;
+$dark-gray-bg: #ebebeb;
+
+$gray: #cccdcd;
+$violet: #872d85;
+$light-black: #252525;
+$black: #1c1c1c;
+$white: #fff;
+
+$stem-bold: "Stem-bold";
+$stem-light: "Stem-light";
+
+$sprite: 'images/sprite.png';
+
+body {
+  background: #ccc;
+  font-family: Stem, sans-serif;
+  font-size: 16px;
+}
+
+.clear {
+  &::after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+.container-float {
+  @include container($container-float);
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+b {
+  font-family: "Stem-bold", sans-serif;
+}
+
+.light {
+  font-family: "Stem-light", sans-serif;
+}
+
+h2 {
+  color: #373737;
+  font-size: 45px;
+  text-align: center;
+
+  &.violet {
+    color: #af3eac;
+    font-size: 25px;
+  }
+}
+
+a {
+  color: #2385d9;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.roll {
+  width: 45px;
+  height: 45px;
+  border: 1px solid $violet;
+  position: relative;
+  font-size: 25px;
+  border-radius: 50%;
+  font-family: "Stem-bold", sans-serif;
+  margin: auto;
+  margin-bottom: 25px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+li h3 {
+  text-align: center;
+  font-family: "Stem-bold", sans-serif;
+}
+
+@import 'sections/navigation',
+  'sections/main',
+  'sections/projects',
+  'sections/promo',
+  'sections/structure',
+  'sections/footer'

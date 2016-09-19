@@ -1,0 +1,39 @@
+a(name="contact")
+footer.footer
+  .container-float
+    .contact
+      h3="Контакты"
+      .number.contact_elem="+7 (702) 808-80-08"
+      .mail.contact_elem="hello@mindpro.kz"
+      .skype.contact_elem="Skype: mindprokz"
+    form
+      h3="Обратная связь"
+      label
+        h4="Ваше имя"
+        input(type="text" required)
+      label
+        h4="Ваше e-mail"
+        input(type="mail" required)
+      label.textarea
+        textarea(required)
+      button="Отправить"
+footer.bottom
+  .container-float
+    .logo_footer
+      .logo
+      p
+        span!="© 2016 — <b>Mindpro-Group</b>"
+        br
+        span="All Rights Reserved."
+    .social_logos
+      //a(href="#").twitter
+      a(href="https://www.instagram.com/astanaballet/" target="_blank").insta
+      a(href="https://www.youtube.com/user/astanaballet" target="_blank").youtube
+      a(href="https://www.facebook.com/astanaballet/" target="_blank").facebook
+      a(href="#").vk          
+    a(href="http://mindpro-group.com" target="_blank" class="mind_logo")
+        img(src="http://xn--e1aybc.kz/mind_logo_white.png")    
+script(src="libs/jquery/dist/jquery.min.js")
+script(src="libs/fancybox/source/jquery.fancybox.pack.js")
+script(src="libs/parallaxScroll/index.js")
+script(src="bundle.js")

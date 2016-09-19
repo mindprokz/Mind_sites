@@ -1,0 +1,259 @@
+.footer {
+  background: $light-black;
+  color: $white;
+  padding-top: 35px;
+  padding-bottom: 95px;
+}
+
+.footer h3 {
+  font-size: 35px;
+  font-family: $stem-bold;
+  padding-bottom: 40px;
+
+  @media (min-width: 1px) {
+    text-align: center;
+  }
+
+  @media (min-width: 750px) {
+    text-align: left;
+  }
+}
+
+.footer h4 {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.footer .contact {
+  @media (min-width: 1px) {
+    @include span(100%);
+
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: 750px) {
+    @include span(last 4);
+
+    padding-bottom: 0;
+  }
+}
+
+.footer form {
+  @media (min-width: 1px) {
+    @include span(100%);
+  }
+
+  @media (min-width: 750px) {
+    @include span(7);
+  }
+
+  button {
+    background: $violet;
+    color: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: $stem-bold;
+    letter-spacing: 1px;
+    width: 153px;
+    height: 35px;
+    float: right;
+    margin-right: 10px;
+
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.footer form label {
+  @include span(50%);
+
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+  input {
+    border: none;
+    background: $black;
+    color: $white;
+    border-radius: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 45px;
+    width: span(100%);
+    margin-bottom: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.textarea {
+    @include span(100%);
+
+    textarea {
+      background: $black;
+      border: none;
+      resize: none;
+      width: span(12);
+      height: 105px;
+      border-radius: 10px;
+      color: $white;
+      padding-left: 15px;
+      padding-top: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.footer .contact_elem {
+  @media (min-width: 1px) {
+    @include span(33.333%);
+
+    text-align: center;
+  }
+
+  @media (min-width: 750px) {
+    @include span(100%);
+
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &.skype {
+      &::before {
+        content: ' ';
+        background: url($sprite) no-repeat -557px -8px;
+        float: left;
+        width: 24px;
+        height: 21px;
+        margin-right: 10px;
+        margin-top: -5px;
+      }
+    }
+
+    &.mail {
+      &::before {
+        content: ' ';
+        background: url($sprite) no-repeat -530px -6px;
+        float: left;
+        width: 24px;
+        height: 21px;
+        margin-right: 10px;
+      }
+    }
+
+    &.number {
+      &::before {
+        content: ' ';
+        background: url($sprite) no-repeat -585px -5px;
+        float: left;
+        width: 24px;
+        height: 21px;
+        margin-right: 10px;
+        margin-top: -5px;
+      }
+    }
+  }
+}
+
+.bottom {
+  background: $black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $gray;
+}
+
+.bottom .logo_footer {
+  @media (min-width: 1px) {
+    @include span(3);
+
+    p {
+      display: none;
+    }
+  }
+
+  @media (min-width: 750px) {
+    @include span(5);
+
+    p {
+      display: block;
+
+      span {
+        float: left;
+        min-width: 199px;
+        width: 43%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.bottom .logo {
+  margin-right: 15px;
+}
+
+.social_logos {
+  margin-top: 20px;
+
+  @media screen and (min-width: 480px) {
+    @include span(5);
+  }
+
+  @media screen and (min-width: 750px) {
+    @include span(4);
+  }
+}
+
+.bottom .twitter,
+.bottom .insta,
+.bottom .youtube,
+.bottom .facebook,
+.bottom .vk {
+  width: 24px;
+  height: 21px;
+  margin: 0 8px;
+  background: url('images/sprite.png') no-repeat;
+  float: left;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.99;
+  }
+}
+
+.bottom .twitter {
+  background-position: -521px -39px;
+}
+
+.bottom .insta {
+  background-position: -619px -38px;
+}
+
+.bottom .youtube {
+  background-position: -578px -38px;
+}
+
+.bottom .facebook {
+  background-position: -600px -38px;
+}
+
+.bottom .vk {
+  background-position: -550px -39px;
+}
+
+.mind_logo {
+  float: right;
+  margin-top: 20px;
+}

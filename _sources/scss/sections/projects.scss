@@ -1,0 +1,60 @@
+.projects h3 {
+  text-align: center;
+  font-size: 45px;
+  color: $dark-text;
+  font-family: $stem-bold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $light-gray-bg;
+}
+
+.projects .parallax-window {
+  height: 600px;
+  width: 100%;
+  display: table;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.projects .wrap {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (min-wudth: 1px) {
+    opacity: 1;
+  }
+
+  @media (min-width: 750px) {
+    opacity: 0;
+  }
+}
+
+.projects .container-float {
+  display: table-cell;
+  vertical-align: middle;
+  background: rgba($violet, 0.6);
+}
+
+.projects h4 {
+  color: $white;
+  font-family: $stem-bold;
+
+  @media (min-width: 1px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 750px) {
+    font-size: 50px;
+  }
+}

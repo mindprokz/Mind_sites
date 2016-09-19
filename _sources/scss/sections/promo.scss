@@ -1,0 +1,128 @@
+section.promo {
+  background: $light-gray-bg;
+  padding-bottom: 45px;
+}
+
+.promo h3 {
+  text-align: center;
+  font-size: 45px;
+  color: $dark-text;
+  font-family: $stem-bold;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.promo .rek {
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid $gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: 1px) {
+    @include span(50%);
+  }
+
+  @media (min-width: 1170px) {
+    @include span(4);
+  }
+}
+
+.promo .rek.ad {
+  @media (min-width: 1170px) {
+    margin-left: span(2);
+  }
+}
+
+.promo .rek.social {
+  @media (min-width: 1px) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: 750px) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-left: span(1);
+  }
+
+  @media (max-width: 1170px) {
+    border-left: none;
+  }
+}
+
+.rek .icon {
+  display: inline-block;
+  text-align: center;
+  background: url($sprite) no-repeat;
+  margin-bottom: 20px;
+
+  &.facebook {
+    @media (min-width: 1px) {
+      background-position: -547px -135px;
+      width: 84px;
+      height: 30px;
+    }
+
+    @media (min-width: 750px) {
+      background-position: -262px -82px;
+      width: 145px;
+      height: 60px;
+    }
+  }
+
+  &.insta {
+    @media (min-width: 1px) {
+      background-position: -546px -93px;
+      width: 99px;
+      height: 30px;
+    }
+
+    @media (min-width: 750px) {
+      background-position: -262px -142px;
+      width: 162px;
+      height: 60px;
+    }
+  }
+
+  &.yandex {
+    @media (min-width: 1px) {
+      background-position: -439px -135px;
+      width: 60px;
+      height: 36px;
+    }
+
+    @media (min-width: 750px) {
+      background-position: -264px 0;
+      width: 93px;
+      height: 60px;
+    }
+  }
+
+  &.google {
+    @media (min-width: 1px) {
+      background-position: -439px -88px;
+      width: 86px;
+      height: 30px;
+    }
+
+    @media (min-width: 750px) {
+      background-position: -373px 0;
+      width: 145px;
+      height: 60px;
+    }
+  }
+}
+
+.rek p {
+  line-height: 20px;
+
+  @media (min-width: 1px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 750px) {
+    font-size: 16px;
+  }
+}
